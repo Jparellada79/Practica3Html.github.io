@@ -1,0 +1,463 @@
+                                            @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,800;1,400&display=swap');
+                                             :root {
+                                                --textoFondoOscuro-color: rgb(0, 0, 0);
+                                                --textos-color: rgb(255, 255, 255);
+                                                --cotraste-color: rgb(189, 55, 0);
+                                                --fondoprincipal-color: rgb(244, 244, 244);
+                                                --boletin-color: rgb(242, 232, 228);
+                                            }
+                                            
+                                            html {
+                                                font-family: 'Raleway', sans-serif;
+                                                background-color: var(--fondoprincipal-color);
+                                            }
+                                            
+                                            * {
+                                                margin: 0;
+                                                padding: 0;
+                                                box-sizing: border-box;
+                                                font-family: 'Raleway', sans-serif;
+                                                ;
+                                            }
+                                            
+                                            header {
+                                                position: sticky;
+                                                top: 1px;
+                                                text-transform: uppercase;
+                                                text-align: center;
+                                                background-color: white;
+                                                padding-top: 20px;
+                                                padding-bottom: 20px;
+                                            }
+                                            
+                                            body {
+                                                margin: 0;
+                                                font-family: 'Raleway', sans-serif;
+                                                color: var(--textoFondoOscuro-color);
+                                            }
+                                            
+                                            footer {
+                                                padding-top: 20px;
+                                                padding-bottom: 32px;
+                                                background-color: black;
+                                                text-align: center;
+                                                bottom: 0;
+                                                color: white
+                                            }
+                                            
+                                            footer>.container {
+                                                padding: 10px
+                                            }
+                                            
+                                            .container,
+                                            .container2 {
+                                                margin-left: auto;
+                                                margin-right: auto;
+                                            }
+                                            
+                                            section {
+                                                padding: 15px;
+                                            }
+                                            
+                                            .img-index {
+                                                width: 100%;
+                                                height: auto;
+                                            }
+                                            
+                                            figure,
+                                            p,
+                                            .divSec3 {
+                                                padding-bottom: 10px;
+                                            }
+                                            
+                                            a {
+                                                text-decoration: none;
+                                                color: var(--cotraste-color);
+                                            }
+                                            
+                                            h1,
+                                            h2 {
+                                                text-align: center;
+                                                padding-bottom: 20px;
+                                                padding-top: 20px;
+                                            }
+                                            
+                                            h3 {
+                                                padding-top: 10px;
+                                                padding-bottom: 10px;
+                                            }
+                                            /* MENÚ DE NAVEGACION Y MENU FOOTER */
+                                            
+                                            nav>a {
+                                                color: rgb(0, 0, 0);
+                                                font-size: 4rem;
+                                                font-weight: 800;
+                                                padding-bottom: 5px;
+                                                display: block;
+                                            }
+                                            
+                                            nav p {
+                                                padding-bottom: 0px;
+                                            }
+                                            
+                                            ul {
+                                                list-style: none
+                                            }
+                                            
+                                            .menu li,
+                                            .menufooter li {
+                                                padding-bottom: 3px;
+                                            }
+                                            
+                                            .menu a {
+                                                color: rgb(0, 0, 0);
+                                                font-weight: 800;
+                                            }
+                                            
+                                            .active>a {
+                                                color: rgb(189, 55, 0);
+                                            }
+                                            
+                                            a:hover {
+                                                color: rgba(0, 0, 0, 0.5)
+                                            }
+                                            
+                                            .rrss li {
+                                                display: inline-block;
+                                                padding-left: 10px;
+                                                padding-right: 10px;
+                                            }
+                                            
+                                            .menufooter>li>a {
+                                                color: white;
+                                                text-align: center;
+                                                line-height: 1.3;
+                                            }
+                                            
+                                            .menufooter li a:hover {
+                                                color: red;
+                                            }
+                                            
+                                            .rrss li img:hover {
+                                                transform: scale(2);
+                                            }
+                                            
+                                            footer>.container {
+                                                padding-left: 30px;
+                                                padding-right: 30px;
+                                            }
+                                            /* INDEX */
+                                            
+                                            .section1a {
+                                                background: url(../img/bg-hero-home.jpg) 100% 100% no-repeat;
+                                                color: var(--textos-color);
+                                                padding-top: 40px;
+                                                padding-bottom: 40px;
+                                                font-size: 2.5rem;
+                                            }
+                                            
+                                            .section4a {
+                                                background-color: var(--boletin-color);
+                                            }
+                                            
+                                            .section4a>.container {
+                                                padding-left: 30px;
+                                                padding-right: 30px;
+                                            }
+                                            
+                                            .section2a .container>h2,
+                                            .section3a .container>h2,
+                                            .section4a .container>h2 {
+                                                text-align: center;
+                                                padding-top: 20px;
+                                                padding-bottom: 10px;
+                                                font-size: 1.5rem;
+                                            }
+                                            
+                                            .leermas {
+                                                font-size: .9rem;
+                                                border-bottom: 1px dotted;
+                                                margin-bottom: 10px;
+                                            }
+                                            
+                                            .noticiasRef {
+                                                display: block;
+                                                font-size: 1.1rem;
+                                                font-weight: 800;
+                                                margin-bottom: 10px;
+                                            }
+                                            
+                                            input {
+                                                padding-left: 15px;
+                                                border: 1px solid var(--textoFondoOscuro-color);
+                                                height: 40px;
+                                                width: 100%;
+                                            }
+                                            
+                                            .formulario {
+                                                padding-top: 10px;
+                                                margin: auto
+                                            }
+                                            
+                                            .informacion {
+                                                padding-top: 15px;
+                                                text-align: left;
+                                                font-size: 0.7em;
+                                                line-height: 1.3;
+                                                margin: auto
+                                            }
+                                            
+                                            .conditions {
+                                                padding-top: 15px;
+                                                font-size: 0.7em;
+                                            }
+                                            
+                                            .conditions input {
+                                                height: 15px;
+                                                width: auto;
+                                                margin-right: 5px;
+                                                margin-bottom: 20px;
+                                            }
+                                            
+                                            button {
+                                                text-align: center;
+                                                padding: 15px 30px 15px 30px;
+                                                border: none;
+                                                background-color: var(--cotraste-color);
+                                                color: var( --textos-color);
+                                                text-transform: uppercase;
+                                            }
+                                            
+                                            .negrita {
+                                                font-weight: 800;
+                                            }
+                                            /* FIN INDEX */
+                                            /* INICIO VIDEOS */
+                                            
+                                            .listavideos .container {
+                                                padding-bottom: 20px;
+                                            }
+                                            
+                                            .listavideos .container h2 {
+                                                padding-top: 10px;
+                                                padding-bottom: 10px;
+                                            }
+                                            
+                                            .listavideos .container figure figcaption {
+                                                background-color: white;
+                                                text-align: center;
+                                                padding: 15px;
+                                                font-size: 1.2rem
+                                            }
+                                            
+                                            .video {
+                                                padding-bottom: 56.25%;
+                                                height: 0;
+                                                overflow: hidden;
+                                                position: relative;
+                                            }
+                                            
+                                            iframe {
+                                                position: absolute;
+                                                height: 100%;
+                                                width: 100%;
+                                                top: 0;
+                                                left: 0;
+                                            }
+                                            /* FIN VIDEOS */
+                                            /* INICIO SINTOMAS */
+                                            
+                                            .sintomas .container {
+                                                padding: 20px;
+                                                margin-bottom: 20px;
+                                                background-color: white;
+                                            }
+                                            /* FIN SINTOMAS */
+                                            /* INICIO COP26 */
+                                            
+                                            .pmayucula {
+                                                text-transform: uppercase;
+                                                font-weight: 600;
+                                                padding-top: 15px;
+                                                font-size: .9em
+                                            }
+                                            
+                                            .cop26 {
+                                                padding-left: 30px;
+                                                padding-right: 30px;
+                                            }
+                                            
+                                            .cop26>.container {
+                                                padding-bottom: 30px
+                                            }
+                                            
+                                            .lista-pactos {
+                                                padding-bottom: 20px;
+                                                padding-top: 20px
+                                            }
+                                            
+                                            .lista-pactos li,
+                                            .pacuerdo {
+                                                padding-bottom: 20px
+                                            }
+                                            
+                                            blockquote {
+                                                max-width: 570px;
+                                                margin-left: auto;
+                                                margin-right: auto;
+                                                margin-top: 15px;
+                                                margin-bottom: 30px;
+                                                padding: 10px 6px;
+                                                background-color: white;
+                                                border-left: 4px solid #ff1616;
+                                            }
+                                            
+                                            blockquote p {
+                                                margin-bottom: 25px;
+                                            }
+                                            
+                                            blockquote cite {
+                                                margin-bottom: 25px;
+                                                font-weight: 600
+                                            }
+                                            /* FIN COP26 */
+                                            
+                                            @media(orientation: landscape) {
+                                                header {
+                                                    position: relative
+                                                }
+                                            }
+                                            
+                                            @media (min-width: 992px) {
+                                                header {
+                                                    text-align: left;
+                                                }
+                                                /* INDEX */
+                                                .container2 {
+                                                    display: grid;
+                                                    grid-template-columns: 1fr 1fr 1fr;
+                                                    grid-column-gap: 30px;
+                                                }
+                                                .container2,
+                                                .container {
+                                                    width: 50%;
+                                                }
+                                                .menu li,
+                                                .menufooter li {
+                                                    display: inline;
+                                                    padding-left: 10px;
+                                                    padding-right: 10px;
+                                                }
+                                                .section2a>.container>p {
+                                                    font-size: 1.5rem;
+                                                    padding-bottom: 30px;
+                                                }
+                                                .formulario,
+                                                .informacion {
+                                                    width: 50%;
+                                                    margin-right: auto;
+                                                }
+                                                .section4a {
+                                                    margin: auto
+                                                }
+                                                /* VIDEOS */
+                                                .listavideos {
+                                                    display: grid;
+                                                    grid-template-columns: 1fr 1fr;
+                                                    grid-template-rows: 1fr 1fr;
+                                                    gap: 20px 20px;
+                                                    width: 60%;
+                                                    margin: auto
+                                                }
+                                                .listavideos .container {
+                                                    height: auto;
+                                                    width: 100%;
+                                                }
+                                                .listavideos .container figure figcaption {
+                                                    font-size: 1rem
+                                                }
+                                                /* INICIO SINTOMAS */
+                                                .sintoma {
+                                                    width: 100%;
+                                                    height: auto;
+                                                    padding: 10px;
+                                                }
+                                                .sintomas .container {
+                                                    height: auto;
+                                                    width: 100%;
+                                                    display: flex;
+                                                }
+                                                .sintomas {
+                                                    height: auto;
+                                                    width: 100%;
+                                                    display: grid;
+                                                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                                                    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                                                    padding-bottom: 30px;
+                                                }
+                                                .sintomas .container:nth-child(1) {
+                                                    grid-column-start: 2;
+                                                    grid-column-end: 4;
+                                                    grid-row: 1;
+                                                }
+                                                .sintomas .container:nth-child(2) {
+                                                    grid-column-start: 3;
+                                                    grid-column-end: 5;
+                                                    grid-row: 2;
+                                                }
+                                                .sintomas .container:nth-child(3) {
+                                                    grid-column-start: 2;
+                                                    grid-column-end: 4;
+                                                    grid-row: 3;
+                                                }
+                                                .sintomas .container:nth-child(4) {
+                                                    grid-column-start: 3;
+                                                    grid-column-end: 5;
+                                                    grid-row: 4;
+                                                }
+                                                .sintomas .container:nth-child(5) {
+                                                    grid-column-start: 2;
+                                                    grid-column-end: 4;
+                                                    grid-row: 5;
+                                                }
+                                                /* FIN SINTOMAS */
+                                                /* INICIO COP26 */
+                                                .cop26 {
+                                                    width: 80%;
+                                                    display: grid;
+                                                    grid-template-columns: 1fr 1fr;
+                                                    column-gap: 10px;
+                                                    margin: auto;
+                                                }
+                                                .cop26 .container:nth-child(1) {
+                                                    grid-column: 1;
+                                                    width: 80%;
+                                                }
+                                                .cop26 .container:nth-child(2) {
+                                                    grid-column: 2;
+                                                    width: 80%;
+                                                }
+                                                /* FIN COP26 */
+                                            }
+                                            /* INICIO AJUSTE CONTENEDORES  */
+                                            
+                                            @media (min-width: 992px) {
+                                                .container,
+                                                .container2 {
+                                                    max-width: 960px;
+                                                }
+                                            }
+                                            
+                                            @media (min-width: 1200px) {
+                                                .container,
+                                                .container2 {
+                                                    max-width: 1140px;
+                                                }
+                                            }
+                                            
+                                            @media (min-width: 1400px) {
+                                                .container,
+                                                .container2 {
+                                                    max-width: 1300px;
+                                                }
+                                            }
