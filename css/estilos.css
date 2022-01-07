@@ -17,7 +17,6 @@
                                                 padding: 0;
                                                 box-sizing: border-box;
                                                 font-family: 'Raleway', sans-serif;
-                                                ;
                                             }
                                             
                                             header {
@@ -42,7 +41,7 @@
                                                 background-color: black;
                                                 text-align: center;
                                                 bottom: 0;
-                                                color: white
+                                                color: var(--textos-color);
                                             }
                                             
                                             footer>.container {
@@ -75,6 +74,10 @@
                                                 color: var(--cotraste-color);
                                             }
                                             
+                                            a:hover {
+                                                color: rgba(0, 0, 0, 0.5)
+                                            }
+                                            
                                             h1,
                                             h2 {
                                                 text-align: center;
@@ -88,38 +91,34 @@
                                             }
                                             /* MENÚ DE NAVEGACION Y MENU FOOTER */
                                             
-                                            nav>a {
-                                                color: rgb(0, 0, 0);
+                                            .menu,
+                                            .menufooter {
+                                                list-style: none;
+                                                padding: 0;
+                                                margin: 0;
+                                                display: flex;
+                                                flex-direction: column;
+                                                justify-content: space-around;
+                                            }
+                                            
+                                            .menu li {
+                                                flex: 1
+                                            }
+                                            
+                                            .menu li a {
+                                                font-weight: 800;
+                                                color: var(--textoFondoOscuro-color);
+                                                text-decoration: none;
+                                            }
+                                            
+                                            .irindex {
+                                                color: var(--textoFondoOscuro-color);
                                                 font-size: 4rem;
                                                 font-weight: 800;
-                                                padding-bottom: 5px;
-                                                display: block;
                                             }
                                             
-                                            nav p {
-                                                padding-bottom: 0px;
-                                            }
-                                            
-                                            ul {
-                                                list-style: none
-                                            }
-                                            
-                                            .menu li,
-                                            .menufooter li {
-                                                padding-bottom: 3px;
-                                            }
-                                            
-                                            .menu a {
-                                                color: rgb(0, 0, 0);
-                                                font-weight: 800;
-                                            }
-                                            
-                                            .active>a {
-                                                color: rgb(189, 55, 0);
-                                            }
-                                            
-                                            a:hover {
-                                                color: rgba(0, 0, 0, 0.5)
+                                            .active a {
+                                                color: var(--cotraste-color)!important;
                                             }
                                             
                                             .rrss li {
@@ -130,12 +129,12 @@
                                             
                                             .menufooter>li>a {
                                                 color: white;
-                                                text-align: center;
-                                                line-height: 1.3;
+                                                text-decoration: none;
                                             }
                                             
                                             .menufooter li a:hover {
-                                                color: red;
+                                                font-weight: normal;
+                                                color: var(--comtraste-color);
                                             }
                                             
                                             .rrss li img:hover {
@@ -226,6 +225,10 @@
                                                 background-color: var(--cotraste-color);
                                                 color: var( --textos-color);
                                                 text-transform: uppercase;
+                                            }
+                                            
+                                            button:hover {
+                                                background-color: var(--texto-color);
                                             }
                                             
                                             .negrita {
@@ -332,7 +335,6 @@
                                                 header {
                                                     text-align: left;
                                                 }
-                                                /* INDEX */
                                                 .container2 {
                                                     display: grid;
                                                     grid-template-columns: 1fr 1fr 1fr;
@@ -342,11 +344,14 @@
                                                 .container {
                                                     width: 50%;
                                                 }
+                                                .menu,
+                                                .menufooter {
+                                                    display: flex;
+                                                }
                                                 .menu li,
                                                 .menufooter li {
-                                                    display: inline;
-                                                    padding-left: 10px;
-                                                    padding-right: 10px;
+                                                    align-items: center;
+                                                    justify-content: space-around;
                                                 }
                                                 .section2a>.container>p {
                                                     font-size: 1.5rem;
@@ -423,7 +428,7 @@
                                                 /* FIN SINTOMAS */
                                                 /* INICIO COP26 */
                                                 .cop26 {
-                                                    width: 80%;
+                                                    width: 70%;
                                                     display: grid;
                                                     grid-template-columns: 1fr 1fr;
                                                     column-gap: 10px;
